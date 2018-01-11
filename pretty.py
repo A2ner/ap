@@ -43,8 +43,8 @@ def get_certificate():
                "Host": "passport.etest.net.cn",
                "Referer": "https://passport.etest.net.cn/LoginIframe.aspx?ReturnUrl=http://apchina.net.cn/Home/VerifyPassport/?LoginType=0&safe=1",
                }
-    username = '1548983578@qq.com'
-    passwd = '123456test!'
+    username = raw_input('请输入您的账号')
+    passwd = raw_input('请输入您的密码')
     login_url = 'https://passport.etest.net.cn/'
     data = {
         '__RequestVerificationToken': token,
